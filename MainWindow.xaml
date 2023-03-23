@@ -5,11 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:D8_porting_WPF"
         mc:Ignorable="d"
-        Title="Sceneriet" Height="400" Width="400" KeyUp="ApplicationKeyPress">
+        Title="Sceneriet" Height="600" Width="600" KeyUp="ApplicationKeyPress">
     <Grid>
-        <TextBlock x:Name="Title" Height="27" Margin="10,10,0,0" Text="Title" Width="300" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" FontFamily="Lucida Console"/>
-        <TextBlock x:Name="Text" Margin="10,40,100,15" Text="Text" Width="300" HorizontalAlignment="Left" VerticalAlignment="Stretch" FontSize="16" FontFamily="Lucida Console"/>
-
+        <TextBlock x:Name="Title" Height="27" Text="Room Name" Width="300" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="20" FontFamily="Lucida Console" RenderTransformOrigin="0.925,1.546"/>
         <TextBlock x:Name="KeyPressDisplay" HorizontalAlignment="Stretch" Margin="0,30,0,0" TextWrapping="Wrap" Text="Keypress:" VerticalAlignment="Bottom" FontFamily="Lucida Console"/>
+        <Image x:Name="image1" Margin="26,53,376,371" RenderTransformOrigin="0.445,-0.563"/>
+        <TextBlock x:Name="com1" Height="27" Width="300" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" FontFamily="Lucida Console" RenderTransformOrigin="0.925,1.546" Margin="300,0,0,0"><Run Language="sv-se" Text="com1"/></TextBlock>
+        <TextBlock x:Name="com2" Height="27" Width="300" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" FontFamily="Lucida Console" RenderTransformOrigin="0.925,1.546" Margin="300,32,0,0"><Run Language="sv-se" Text="com2"/></TextBlock>
+        <TextBlock x:Name="com3" Height="27" Width="300" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" FontFamily="Lucida Console" RenderTransformOrigin="0.925,1.546" Margin="300,64,0,0"><Run Language="sv-se" Text="com3"/></TextBlock>
+        <TextBlock x:Name="com4" Height="27" Width="300" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" FontFamily="Lucida Console" RenderTransformOrigin="0.925,1.546" Margin="300,96,0,0"><Run Language="sv-se" Text="com4"/></TextBlock>
+        <TextBlock x:Name="Error" Height="27" Width="300" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" FontFamily="Lucida Console" RenderTransformOrigin="0.925,1.546" Margin="0,265,0,0"><Run Language="sv-se" Text="Error"/></TextBlock>
+        <TextBlock x:Name="com5" Height="27" Width="300" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="16" FontFamily="Lucida Console" RenderTransformOrigin="0.925,1.546" Margin="300,128,0,0"><Run Language="sv-se" Text="com5"/></TextBlock>
+        <TextBlock x:Name="com6" Text="com6" Margin="300,160,-300,-160" FontSize="16" FontFamily="Lucida Console"/>
+        <DockPanel HorizontalAlignment="Center">
+            <TextBlock x:Name="presentation" Height="150" Width="600" FontSize="16" RenderTransformOrigin="0.925,1.546" FontFamily="Lucida Console" Margin="0,200,0,0" TextWrapping="Wrap"><Run Language="sv-se" Text="Main presentation text"/></TextBlock>
+            <TextBlock x:Name="invenotry" Height="80" Width="586" FontSize="16" RenderTransformOrigin="0.925,1.546" FontFamily="Lucida Console" Margin="-600,450,0,0" TextWrapping="Wrap"><Run Language="sv-se" Text="Invenotry"/></TextBlock>
+        </DockPanel>
     </Grid>
 </Window>
